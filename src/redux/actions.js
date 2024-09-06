@@ -5,3 +5,8 @@ export const getPosts = (posts) => ({
   type: GET_POSTS,
   payload: posts
 })
+
+export const addPost = (post) => ({
+  type: ADD_POST,
+  payload: post
+})
