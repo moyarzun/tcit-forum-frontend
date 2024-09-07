@@ -32,8 +32,8 @@ const App = () => {
 
   return (
     <div>
-      <CreatePost />
       <GetPosts posts={posts} />
+      <CreatePost />
     </div>
   );
 };
