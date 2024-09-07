@@ -1,6 +1,3 @@
-# tcit-forum-frontend
-Frontend para aplicación de foro con React y Redux - TCIT Challenge
-
 # TCIT Challenge - Frontend para Aplicación de Manejo de Posts
 
 Aplicación para lectura, creación y eliminación de mensajes (posts). Frontend (cliente) desarrollado con React y Redux, hoja de estilos por Tailwind CSS.
