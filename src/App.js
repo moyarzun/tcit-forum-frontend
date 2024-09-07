@@ -2,7 +2,7 @@ import React, { useEffect } from 'react'
 import { useDispatch, useSelector } from 'react-redux'
 import { getPosts } from './redux/actions'
 import PostList from './components/GetPosts'
-import AddPost from './components/AddPost'
+import AddPost from './components/CreatePost'
 
 const App = () => {
   const dispatch = useDispatch()
