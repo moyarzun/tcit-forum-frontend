@@ -60,7 +60,7 @@ const CreatePost = () => {
           onChange={(e) => setDescription(e.target.value)}
         />
       </div>
-      <button type="submit">Agregar Mensaje</button>
+      <button type="submit">Crear</button>
     </form>
   )
 }
