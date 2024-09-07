@@ -1,7 +1,7 @@
 import React from 'react'
 import { useSelector } from 'react-redux'
 
-const PostList = ({ posts }) => {
+const GetPosts = ({ posts }) => {
   return (
     <div>
       <h2>Posts</h2>
@@ -25,4 +25,4 @@ const PostList = ({ posts }) => {
   )
 }
 
-export default PostList
+export default GetPosts

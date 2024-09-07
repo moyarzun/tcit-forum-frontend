@@ -1,5 +1,5 @@
 import { combineReducers } from 'redux'
-import { ADD_POST, GET_POSTS, LIST_POSTS } from './actions'
+import { ADD_POST, GET_POSTS } from './actions'
 
 const initialPostsState = {
   posts: []
