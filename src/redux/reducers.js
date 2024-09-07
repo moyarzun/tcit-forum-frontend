@@ -1,5 +1,5 @@
 import { combineReducers } from 'redux'
-import { GET_POSTS, CREATE_POST, DELETE_POST } from './actions'
+import { GET_POSTS, CREATE_POST, DELETE_POST, FILTER_POSTS } from './actions'
 
 const initialPostsState = {
   posts: []
@@ -13,16 +13,19 @@ const postsReducer = (state = initialPostsState, action) => {
         posts: action.payload
       }
     case CREATE_POST:
-      console.log('CREATE')
       return {
         ...state,
         posts: [...state.posts, action.payload.data]
       }
     case DELETE_POST:
-      console.log('DELETE')
       return {
         ...state,
         posts: state.posts.filter((post) => post.id !== action.payload)
+      }
+    case FILTER_POSTS:
+      return {
+        ...state,
+        posts: state.posts.filter((post) => post.name.includes(action.payload.name))
       }
     default:
       return state

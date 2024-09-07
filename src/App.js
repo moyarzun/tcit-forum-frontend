@@ -3,6 +3,7 @@ import { useDispatch, useSelector } from 'react-redux'
 import { getPosts } from './redux/actions'
 import GetPosts from './components/GetPosts'
 import CreatePost from './components/CreatePost'
+import FilterPost from './components/FilterPost'
 
 const App = () => {
   const dispatch = useDispatch()
@@ -32,6 +33,7 @@ const App = () => {
 
   return (
     <div>
+      <FilterPost />
       <GetPosts posts={posts} />
       <CreatePost />
     </div>
