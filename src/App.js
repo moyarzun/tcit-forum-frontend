@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react'
 import { useDispatch, useSelector } from 'react-redux'
 import { getPosts } from './redux/actions'
-import PostList from './components/GetPosts'
+import GetPosts from './components/GetPosts'
 import CreatePost from './components/CreatePost'
 
 const App = () => {
@@ -33,7 +33,7 @@ const App = () => {
   return (
     <div>
       <CreatePost />
-      <PostList posts={posts} />
+      <GetPosts posts={posts} />
     </div>
   );
 };
