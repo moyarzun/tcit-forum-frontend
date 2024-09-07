@@ -1,5 +1,5 @@
 import { combineReducers } from 'redux'
-import { ADD_POST, GET_POSTS } from './actions'
+import { CREATE_POST, GET_POSTS } from './actions'
 
 const initialPostsState = {
   posts: []
@@ -12,10 +12,10 @@ const postsReducer = (state = initialPostsState, action) => {
         ...state,
         posts: action.payload
       }
-    case ADD_POST:
+    case CREATE_POST:
       return {
         ...state,
-        posts: [...state.posts, action.payload]
+        posts: [...state.posts, action.payload.data]
       }
     default:
       return state
