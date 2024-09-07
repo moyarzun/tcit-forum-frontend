@@ -26,22 +26,29 @@ const GetPosts = ({ posts }) => {
   };
 
   return (
-    <div>
-      <h2>Posts</h2>
-      <table>
+    <div className="container mx-auto p-4">
+      <h2 className="text-2xl font-bold mb-4">Posts</h2>
+      <table className="min-w-full bg-white border border-gray-200">
         <thead>
           <tr>
-            <th>Nombre</th>
-            <th>Descripción</th>
-            <th>Acción</th>
+            <th className="py-2 px-4 border-b border-gray-200 bg-gray-100 text-left text-lg font-semibold text-gray-700">Nombre</th>
+            <th className="py-2 px-4 border-b border-gray-200 bg-gray-100 text-left text-lg font-semibold text-gray-700">Descripción</th>
+            <th className="py-2 px-4 border-b border-gray-200 bg-gray-100 text-left text-lg font-semibold text-gray-700">Acción</th>
           </tr>
         </thead>
         <tbody>
           {posts.map((post) => (
-            <tr key={post.id}>
-              <td>{post.name}</td>
-              <td>{post.description}</td>
-              <td><button onClick={() => handleDelete(post.id)}>Eliminar</button></td>
+            <tr key={post.id} className="hover:bg-gray-100">
+              <td className="py-2 px-4 border-b border-gray-200">{post.name}</td>
+              <td className="py-2 px-4 border-b border-gray-200">{post.description}</td>
+              <td className="py-2 px-4 border-b border-gray-200">
+                <button 
+                  onClick={() => handleDelete(post.id)}
+                  className="bg-red-500 hover:bg-red-700 text-white font-bold py-1 px-2 rounded"
+                >
+                  Eliminar
+                </button>
+              </td>
             </tr>
           ))}
         </tbody>
