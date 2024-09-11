@@ -13,7 +13,7 @@ Desarrollado por [Mauricio Oyarzún](https://github.com/moyarzun).
 1. Clonar el repositorio de GitHub:
 
     ```bash
-    git clone https://github.com/tu-usuario/tcit-forum-frontend.git
+    git clone https://github.com/moyarzun/tcit-forum-frontend.git
     cd tcit-forum-frontend
     ```
 
